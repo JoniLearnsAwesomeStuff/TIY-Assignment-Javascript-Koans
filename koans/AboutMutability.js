@@ -1,11 +1,11 @@
 describe("About Mutability", function() {
 
-  // it("should expect object properties to be public and mutable", function () {
-  //   var aPerson = {firstname: "John", lastname: "Smith" };
-  //   aPerson.firstname = "Alan";
-  //
-  //   expect(aPerson.firstname).toBe("Alan");
-  // });
+  it("should expect object properties to be public and mutable", function () {
+    var aPerson = {firstname: "John", lastname: "Smith" };
+    aPerson.firstname = "Alan";
+  
+    expect(aPerson.firstname).toBe("Alan");
+  });
 
   it("should understand that constructed properties are public and mutable", function () {
     function Person(firstname, lastname)
